@@ -1196,7 +1196,7 @@ If ERRORP, error if such a thing cannot be found"
              (executable-find (car inferior-lisp-program-and-args)))
         (combine-and-quote-strings inferior-lisp-program-and-args)
       (let ((guessed (cl-some #'executable-find
-                              '("lisp" "sbcl" "clisp" "cmucl"
+                              '("lisp" "sbcli" "sbcl" "clisp" "cmucl"
                                 "acl" "alisp"))))
         (cond ((and guessed
                     (or (not interactive)
